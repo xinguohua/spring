@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55e07877-9677-42de-93a3-6c66d98055f4" name="Default" comment="" />
+    <list default="true" id="55e07877-9677-42de-93a3-6c66d98055f4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +25,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
+            <state relative-caret-position="572">
               <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding />
             </state>
@@ -37,8 +39,8 @@
       <file leaf-file-name="IOC.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/IOC.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="28" column="11" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="616">
+              <caret line="28" column="11" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -47,8 +49,8 @@
       <file leaf-file-name="IOStest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/tju/test/IOStest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="-198">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,119 +62,8 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.0.RELEASE/spring-context-4.0.0.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
+              <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/org.springframework.context.ApplicationContext" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/org.springframework.context.ApplicationContext">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>org.springframework.context.ApplicationContext</OriginalElement>
-              <nodes>
-                <node x="0.0" y="86.0">org.springframework.beans.factory.HierarchicalBeanFactory</node>
-                <node x="847.7333333333333" y="268.0">org.springframework.context.support.FileSystemXmlApplicationContext</node>
-                <node x="1424.9333333333334" y="0.0">org.springframework.core.io.ResourceLoader</node>
-                <node x="134.75" y="0.0">org.springframework.beans.factory.BeanFactory</node>
-                <node x="486.0000000000001" y="86.0">org.springframework.core.env.EnvironmentCapable</node>
-                <node x="919.0000000000001" y="86.0">org.springframework.context.ApplicationEventPublisher</node>
-                <node x="1412.888888888889" y="268.0">org.springframework.context.support.ClassPathXmlApplicationContext</node>
-                <node x="1193.0000000000002" y="86.0">org.springframework.core.io.support.ResourcePatternResolver</node>
-                <node x="598.7500000000001" y="182.0">org.springframework.context.ApplicationContext</node>
-                <node x="258.0" y="86.0">org.springframework.beans.factory.ListableBeanFactory</node>
-                <node x="720.0000000000001" y="86.0">org.springframework.context.MessageSource</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.core.env.EnvironmentCapable">
-                  <point x="-17.08333333333337" y="-18.0" />
-                  <point x="684.1666666666667" y="142.0" />
-                  <point x="593.0000000000001" y="142.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.core.io.support.ResourcePatternResolver" target="org.springframework.core.io.ResourceLoader">
-                  <point x="0.0" y="-18.0" />
-                  <point x="1316.5000000000002" y="56.0" />
-                  <point x="1455.2666666666667" y="56.0" />
-                  <point x="-60.66666666666674" y="18.0" />
-                </edge>
-                <edge source="org.springframework.beans.factory.HierarchicalBeanFactory" target="org.springframework.beans.factory.BeanFactory">
-                  <point x="-59.5" y="-18.0" />
-                  <point x="59.5" y="66.0" />
-                  <point x="160.08333333333337" y="66.0" />
-                  <point x="-50.66666666666666" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.support.ClassPathXmlApplicationContext" target="org.springframework.context.ApplicationContext">
-                  <point x="-75.25" y="-18.0" />
-                  <point x="1488.138888888889" y="238.0" />
-                  <point x="752.5000000000001" y="238.0" />
-                  <point x="51.25" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.support.FileSystemXmlApplicationContext" target="org.springframework.context.ApplicationContext">
-                  <point x="-77.75" y="-18.0" />
-                  <point x="925.4833333333333" y="248.0" />
-                  <point x="650.0000000000001" y="248.0" />
-                  <point x="-51.25" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.support.FileSystemXmlApplicationContext" target="org.springframework.core.io.ResourceLoader">
-                  <point x="77.75" y="-18.0" />
-                  <point x="1080.9833333333333" y="248.0" />
-                  <point x="1450.5000000000002" y="248.0" />
-                  <point x="1450.5000000000002" y="66.0" />
-                  <point x="1515.9333333333334" y="66.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.support.ClassPathXmlApplicationContext" target="org.springframework.core.io.ResourceLoader">
-                  <point x="75.25" y="-18.0" />
-                  <point x="1638.638888888889" y="66.0" />
-                  <point x="1576.6000000000001" y="66.0" />
-                  <point x="60.66666666666674" y="18.0" />
-                </edge>
-                <edge source="org.springframework.beans.factory.ListableBeanFactory" target="org.springframework.beans.factory.BeanFactory">
-                  <point x="0.0" y="-18.0" />
-                  <point x="362.0" y="66.0" />
-                  <point x="261.41666666666663" y="66.0" />
-                  <point x="50.66666666666663" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.beans.factory.HierarchicalBeanFactory">
-                  <point x="-85.41666666666663" y="-18.0" />
-                  <point x="615.8333333333335" y="162.0" />
-                  <point x="119.0" y="162.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.context.ApplicationEventPublisher">
-                  <point x="51.25" y="-18.0" />
-                  <point x="752.5000000000001" y="152.0" />
-                  <point x="1046.0" y="152.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.context.MessageSource">
-                  <point x="17.08333333333337" y="-18.0" />
-                  <point x="718.3333333333335" y="142.0" />
-                  <point x="809.5000000000001" y="142.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.beans.factory.ListableBeanFactory">
-                  <point x="-51.25" y="-18.0" />
-                  <point x="650.0000000000001" y="152.0" />
-                  <point x="362.0" y="152.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="org.springframework.context.ApplicationContext" target="org.springframework.core.io.support.ResourcePatternResolver">
-                  <point x="85.41666666666663" y="-18.0" />
-                  <point x="786.6666666666667" y="162.0" />
-                  <point x="1316.5000000000002" y="162.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.9254237288135593" x="517.3406593406594" y="173.34065934065933" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -211,6 +102,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -294,9 +188,9 @@
     <option name="jreName" value="9.0" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="287" />
-    <option name="y" value="80" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="33" />
+    <option name="y" value="84" />
     <option name="width" value="1705" />
     <option name="height" value="960" />
   </component>
@@ -315,10 +209,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,12 +268,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -523,13 +418,11 @@
       <option name="presentableId" value="Default" />
       <updated>1590471846454</updated>
       <workItem from="1590471850000" duration="8644000" />
+      <workItem from="1590499611423" duration="75000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IOStest_test - 2020.05.26 at 15h 10m 16s.xml">
-      <configuration name="IOStest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IOStest_test - 2020.05.26 at 15h 11m 08s.xml">
       <configuration name="IOStest.test" configurationId="JUnit" />
     </history-entry>
@@ -557,41 +450,44 @@
     <history-entry file="IOStest_test - 2020.05.26 at 16h 01m 28s.xml">
       <configuration name="IOStest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IOStest_test - 2020.05.26 at 21h 28m 01s.xml">
+      <configuration name="IOStest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8644000" />
+    <option name="totallyTimeSpent" value="8719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="287" y="80" width="1705" height="960" extended-state="1" />
+    <frame x="33" y="84" width="1705" height="960" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2963801" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8369099" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36306533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16309012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2963801" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8369099" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36306533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16309012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,11 +505,67 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/IOC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.0.RELEASE/spring-context-4.0.0.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/tju/bean/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/tju/test/IOStest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +670,7 @@
               <point x="0.0" y="18.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9254237288135593" x="517.3406593406594" y="173.34065934065933" />
+          <settings layout="Hierarchic Group" zoom="0.9254237288135593" x="517.0" y="173.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -728,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
+        <state relative-caret-position="572">
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding />
         </state>
@@ -737,7 +689,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.0.RELEASE/spring-context-4.0.0.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -767,16 +719,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/IOC.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="11" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
+        <state relative-caret-position="616">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/tju/test/IOStest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="-198">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
