@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<context:component-scan base-package="edu.tju">-->
+        <!--&lt;!&ndash;扫描的时候可以排除一些不必要的组件-->
+        <!--type="annotation" 指定排除规则，按照注解进行排除，标注了指定的注解不要-->
+        <!--expression="",注解的全类名-->
+
+        <!--type="assignable"  指定排除某个个具体的类，按照类排除-->
+        <!--expression="" 类的全类名-->
+        <!--&ndash;&gt;-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>-->
+        <!--<context:exclude-filter type="assignable" expression="edu.tju.controller.BookController"></context:exclude-filter>-->
+    <!--</context:component-scan>-->
+
+    <!--<context:component-scan base-package="edu.tju" use-default-filters="false">-->
+        <!--<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"></context:include-filter>-->
+        <!--<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:include-filter>-->
+    <!--</context:component-scan>-->
+
+    <!--DI依赖注入-->
+    <!--使用@Autowired注解实现根据类型自动配置-->
+    <context:component-scan base-package="edu.tju" >
+    </context:component-scan>
+    <!--
+    @Autowired原理
+    @Autowired
+    private BookService bookService;
+    1)按照属性变量类型去容器中找到对应的组件 bookService = ioc.getBean(BookService.class)
+        1)找到一个，就赋值
+        2）没找到 抛异常
+        3）找到多个
+            1）按属性变量作为id继续匹配 假如找到按类型匹配的为以下容器：类BookService（id默认为bookservice）,类BookServicExt（id默认为bookServicExt）
+            与属性id匹配的容器是BookService（id为bookservice）
+            2）如果没有匹配上 就报错
+            本质是用属性变量名作为容器id去匹配的 类型为BookService的容器
+            引出@Qualifier("要找的BookService的容器id")
+                @Autowired
+                private BookService bookService;
+                1）找到装配
+                2）找不到报错
+     Autowired 标注的自动装配属性默认属性是一定装配上的，任何情况下没找到都是抛异常
+     如果设置 @Autowired(required = false)找不到就设置null
+
+      @Autowired自动装配的注解 @Resource @Inject
+      @Autowired最强大 spring自己的注解
+      @Resource j2ee java标准 扩展性更强
+
+    -->
+
+    <!--
+
+
+
+    -->
+</beans>

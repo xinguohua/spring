@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-4.0.xsd ">
+
+
+
+    <bean id="car01" class="cn.tju.bean.Car">
+        <property name="carName" value="宝马"></property>
+        <property name="color" value="绿色"></property>
+        <property name="price" value="30000"></property>
+    </bean>
+
+
+
+    <bean id="person01" class="cn.tju.bean.Person">
+        <!-- name="null" -->
+        <property name="name">
+             <!--进行复杂的赋值 -->
+            <null />
+        </property>
+        <!--&lt;!&ndash; ref：代表引用外面的一个值 ;引用其他bean car = ioc.getBean("car01") &ndash;&gt;-->
+         <!--<property name="car" ref="car01"></property>-->
+        <!--<property name="car">-->
+        <!--对象我们可以使用bean标签创建 car = new Car(); 引用内部bean；不能被获取到，只能内部使用 -->
+        <property name="car">
+            <!--对象我们可以使用bean标签创建 car = new Car(); 引用内部bean；不能被获取到，只能内部使用 -->
+            <bean class="cn.tju.bean.Car">
+                <property name="carName" value="自行车"></property>
+            </bean>
+        </property>
+
+    </bean>
+
+    <bean id="book01" class="cn.tju.bean.Book">
+        <property name="bookName" value="东游记"></property>
+    </bean>
+
+    <bean id="person02" class="cn.tju.bean.Person">
+    <!-- 如何为list类型赋值 -->
+    <property name="books">
+        <!-- books = new ArrayList<Book>(); -->
+        <list>
+            <!-- list标签体中添加每一个元素 -->
+            <!--内部引用bean-->
+            <bean class="cn.tju.bean.Book" p:bookName="西游记"></bean>
+            <!-- 引用外部一个元素 -->
+            <ref bean="book01" />
+        </list>
+    </property>
+    </bean>
+
+    <!--<bean id="person02" class="com.atguigu.bean.Person">-->
+    <!--&lt;!&ndash; 如何为list类型赋值 &ndash;&gt;-->
+    <!--<property name="books">-->
+        <!--&lt;!&ndash; books = new ArrayList<Book>(); &ndash;&gt;-->
+        <!--<list>-->
+            <!--&lt;!&ndash; list标签体中添加每一个元素 &ndash;&gt;-->
+            <!--<bean class="com.atguigu.bean.Book" p:bookName="西游记"></bean>-->
+            <!--&lt;!&ndash; 引用外部一个元素 &ndash;&gt;-->
+            <!--<ref bean="book01" />-->
+        <!--</list>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <bean id="person03" class="cn.tju.bean.Person">
+    <!-- Map<String, Object> maps; -->
+    <property name="maps">
+        <!-- maps = new LinkedHashMap<>(); -->
+        <map>
+            <!-- 一个entry代表一个键值对 -->
+            <entry key="key01" value="张三"></entry>
+            <entry key="key02" value="18"></entry>
+            <entry key="key03" value-ref="book01"></entry>
+            <entry key="key04">
+                <bean class="cn.tju.bean.Car">
+                    <property name="carName" value="宝马"></property>
+                </bean>
+            </entry>
+            <entry key="key05">
+                <value>李四</value>
+            </entry>
+        </map>
+    </property>
+    </bean>
+
+    <bean id="person04" class="cn.tju.bean.Person">
+        <!-- private Properties properties; -->
+        <property name="properties">
+            <!-- properties = new Properties();所有的k=v都是string -->
+            <props>
+                <!-- k=v都是string；值直接写在标签体中 -->
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+
+
+    <!-- util名称空间创建集合类型的bean；方便别人引用 -->
+    <bean id="person05" class="cn.tju.bean.Person">
+        <property name="maps" ref="myMap"></property>
+    </bean>
+
+    <util:map id="myMap">
+        <!-- 添加元素 -->
+        <entry key="key01" value="张三"></entry>
+        <entry key="key02" value="18"></entry>
+        <entry key="key03" value-ref="book01"></entry>
+        <entry key="key04">
+            <bean class="cn.tju.bean.Car">
+                <property name="carName" value="宝马"></property>
+            </bean>
+        </entry>
+        <entry key="key05">
+            <value>李四</value>
+        </entry>
+    </util:map>
+
+
+    <!-- 解释：4个元素
+	[[],Person,12,{}]
+	 -->
+    <util:list id="myList">
+        <list></list>
+        <bean class="cn.tju.bean.Person"></bean>
+        <value>12</value>
+        <ref bean="myMap"/>
+    </util:list>
+
+
+    <!-- 级联属性赋值：   级联属性:属性的属性-->
+    <bean id="person06" class="cn.tju.bean.Person">
+        <!--为car赋值的时候。改变car的价格  -->
+        <property name="car" ref="car01"></property>
+        <!--级联属性 改变引用类型car的属性  -->
+        <property name="car.price" value="900000"></property>
+    </bean>
+
+
+
+    <bean id="person08" class="cn.tju.bean.Person" abstract="true">
+        <property name="Name" value="张三"></property>
+        <property name="age" value="18"></property>
+        <property name="gender" value="男"></property>
+        <property name="email" value="zhangsan@atguigu.com"></property>
+    </bean>
+
+    <!--parent：指定当前bean的配置信息继承于哪个  -->
+    <bean id="person09" class="cn.tju.bean.Person" parent="person08" >
+        <property name="Name" value="李四"></property>
+    </bean>
+</beans>
